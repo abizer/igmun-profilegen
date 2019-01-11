@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{ title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="../bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../igmun_print.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <img style="float: left;" width="150px" height="150px" src="../logo_icon.png" />
+        <p class="text-bold h1 text-center" id="country_name">{{ committee|upper }}<br />{{ country|title }}</p>
+      </div>
+      <div class="marketing page_break"> <!-- class page_break -->
+        <div class="row small">
+        <!-- <img src="pictures/bolivia.gif" class="country_pic "  /> -->
+          
+          <div class='col-lg-12'>
+            <h4>Background</h4> 
+            <p class="body_copy">{{ background_text }}</p>
+          </div>
+                    
+          <div class="col-lg-12">
+            <h4>Current Issues</h4>
+            <p class="body_copy">{{ issues_text }}</p>
+          </div>
+                    
+          <div class="col-lg-12">
+            <h4>Country Policies</h4>
+            <p class="body_copy">{{ policies_text }}</p>
+          </div>
+
+	  {% if quotes_text %}
+	  <div class="col-lg-12">
+	    <h4>Related Quotes</h4>
+	    <p class="body_copy">{{ quotes_text }}</p>
+	  </div>
+	  {% endif %}
+          
+        </div>
+      </div>
+      {% if country_statistics %}
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Statistics</h4>
+          <table class="table country_stats">
+            {% for stat_name, stat_value in country_statistics %}
+            <tr>
+              <td class='stats_stat_name'>{{ stat_name }}</td>
+              <td class='stats_stat_data'>{{ stat_value|replace('\n', '<br />') }}</td>
+            </tr>
+            {% endfor %}
+          </table>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+      
+      <footer class="footer">
+        <p class="small text-center">&copy; 2019 IGMUN VIII, a program of UNA-USA Northern California Division, a 501(c)(3) nonprofit corporation.</p>
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>

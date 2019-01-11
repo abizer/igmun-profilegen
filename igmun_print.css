@@ -1,0 +1,231 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 10px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 10px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.country_pic {
+  float: right;
+  margin: 15px;
+  width: 200px;
+}
+
+.country_stats td
+{
+  text-align: center;
+}
+
+.body_copy
+{
+  text-indent: 25px;
+  text-align: justify;
+  font-size: 12px;
+}
+
+/*
+.country_stats td:first-of-type
+{
+  font-weight: bold;
+  width: 30%;
+  
+}
+
+.country_stats td:nth-of-type(2)
+{
+  width: 60%;
+  
+}
+*/
+.stats_stat_name
+{
+  font-weight: bold;
+  width: 20%;
+  font-size: 10px;
+  margin: 0px !important;
+  padding: 0px;
+}
+
+.stats_stat_data
+{
+  width: 80%;
+  line-height: 0.1em;
+  margin: 0px !important;
+  padding: 0px;
+}
+
+.stats_primary_text 
+{
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.stats_secondary_text
+{
+  font-size: 8pt;
+}
+
+.stats_missing
+{
+  font-size: 8px;
+}
+
+@media print {
+  .page_break
+  {
+    page-break-after: always;
+  }
+
+  .body_copy 
+  {
+    font-size: 11px;
+  }
+
+  .country_stats
+  {
+    font-size: 10pt;
+    border-collapse: collapse;
+  }
+
+  .country_stats td
+  {
+    padding: 0px;
+  }
+
+  .big {
+    font-size: 12pt;
+}
+
+.medium {
+    font-size: 10pt;
+}
+
+.small {
+    font-size: 12pt;
+}
+
+.bigpic {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.mediumpic {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.smallpic {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+}
+
+.big {
+    font-size: 12pt;
+}
+
+.medium {
+    font-size: 10pt;
+}
+
+.small {
+    font-size: 8pt;
+}
+
+.bigpic {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.mediumpic {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.smallpic {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#country_name {
+  font-size: 50px;
+}
